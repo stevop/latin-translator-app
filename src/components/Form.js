@@ -2,6 +2,7 @@ import "./Form.css";
 import { useState } from "react";
 
 const Form = () => {
+	const inputValue = document.getElementById("text");
 	const [word, setWord] = useState(null);
 	const [query, setQuery] = useState("");
 
@@ -9,6 +10,7 @@ const Form = () => {
 		e.preventDefault();
 		if (!query) return;
 
+		// creating a fetch function
 		const fetchData = async () => {
 			const response = await fetch(
 				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`
@@ -17,7 +19,10 @@ const Form = () => {
 			setWord(data);
 			// console.log(data);
 		};
+		// Calling a fetchData
 		fetchData();
+		// cleaning up the input
+		inputValue.value = "";
 	};
 
 	return (
