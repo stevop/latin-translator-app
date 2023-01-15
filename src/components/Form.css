@@ -5,15 +5,55 @@
 	margin: 1rem 0 1.5rem;
 	max-width: 375px;
 }
+.Form form input {
+	border: none;
+	height: 35px;
+}
+.Form form input::-webkit-input-placeholder {
+	color: #262625;
+	font-size: 1rem;
+}
+.Form form input::-moz-placeholder {
+	color: #262625;
+	font-size: 1rem;
+}
+.Form form input:-ms-input-placeholder {
+	color: #262625;
+	font-size: 1rem;
+}
+.Form form input::-ms-input-placeholder {
+	color: #262625;
+	font-size: 1rem;
+}
+.Form form input::placeholder {
+	color: #262625;
+	font-size: 1rem;
+}
+.Form form button {
+	background-image: url(../images/search-icon.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	border: none;
+	color: #262625;
+	font-size: 0.8rem;
+	height: 35px;
+	text-align: left;
+	width: 75px;
+}
 .Form table {
-	border: 1px solid black;
+	border: 2px solid black;
 	margin-bottom: 1rem;
 	max-width: 375px;
 }
+/* every second table */
 .Form table:nth-of-type(odd) {
-	background-color: rgb(211, 211, 211);
+	background-color: #495b73;
+}
+.Form table:nth-of-type(even) {
+	background-color: #262625;
 }
 .Form fieldset {
+	border-color: black;
 	padding: 0.625rem;
 }
 .Form-word {
@@ -26,7 +66,7 @@
 table,
 td,
 th {
-	border: 1px solid black;
+	border: 2px solid black;
 }
 td,
 th {
