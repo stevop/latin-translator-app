@@ -20,7 +20,7 @@
 	font-style: italic;
 	max-width: 100%;
 }
-.Form table th {
+.Form table-wrapper table th {
 	text-align: left;
 }
 table,
@@ -55,14 +55,23 @@ th {
 	.Form form fieldset button {
 		padding: 0.5rem;
 	}
-	.Form table {
+	.Form table-wrapper table {
 		min-width: 375px;
 		max-width: -webkit-fit-content;
 		max-width: -moz-fit-content;
 		max-width: fit-content;
 	}
-	.Form th,
-	.Form td {
+	.Form table-wrapper th,
+	.Form table-wrapper td {
 		padding: 0.5rem;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.Form .table-wrapper {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.Form table {
+		min-height: 7rem;
 	}
 }

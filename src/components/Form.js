@@ -42,25 +42,27 @@ const Form = () => {
 					<button type="submit">Search</button>
 				</fieldset>
 			</form>
-			{word &&
-				word.map((oneWord) => {
-					return (
-						<table key={oneWord.id}>
-							<thead>
-								<tr>
-									<th scope="col">Word</th>
-									<th scope="col">Translation</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td className="Form-word">{oneWord.full_name}</td>
-									<td> {oneWord.translations_unstructured.en}</td>
-								</tr>
-							</tbody>
-						</table>
-					);
-				})}
+			<div className="table-wrapper">
+				{word &&
+					word.map((oneWord) => {
+						return (
+							<table key={oneWord.id}>
+								<thead>
+									<tr>
+										<th scope="col">Word</th>
+										<th scope="col">Translation</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td className="Form-word">{oneWord.full_name}</td>
+										<td> {oneWord.translations_unstructured.en}</td>
+									</tr>
+								</tbody>
+							</table>
+						);
+					})}
+			</div>
 		</div>
 	);
 };
