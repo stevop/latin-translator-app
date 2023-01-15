@@ -6,7 +6,16 @@ const App = () => {
 	return (
 		<div className="App">
 			<h1>Welcome to Latin Translator App</h1>
-			<small>by Stephanus Constantinus, created in January 2023</small>
+			<small>
+				by{" "}
+				<a
+					target="_blank"
+					rel="noreferer"
+					href="https://stefanp.netlify.app/">
+					Stephanus Constantinus
+				</a>
+				, created in January 2023
+			</small>
 			<p>
 				1. Checkout the <a href="#tutorial">tutorial section</a> to see how the
 				app works.

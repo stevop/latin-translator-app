@@ -17,7 +17,6 @@ const Form = () => {
 			);
 			const data = await response.json();
 			setWord(data);
-			// console.log(data);
 		};
 		// Calling a fetchData
 		fetchData();
