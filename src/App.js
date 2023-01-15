@@ -3,6 +3,10 @@ import Form from "./components/Form";
 import Tutorial from "./components/Tutorial";
 
 const App = () => {
+	const handleLink = () => {
+		alert("Work in progress...");
+	};
+
 	return (
 		<div className="App">
 			<h1>Welcome to Latin Translator App</h1>
@@ -17,12 +21,14 @@ const App = () => {
 				, created in January 2023
 			</small>
 			<p>
-				1. Checkout the <a href="#tutorial">tutorial section</a> to see how the
-				app works.
-			</p>
-			<p>
-				2. If you happen to not find the suitable translation, kindly check my
-				second translator app <a href="#">here</a>.
+				If you happen to not find the suitable translation, kindly check my
+				second translator app{" "}
+				<a
+					onClick={handleLink}
+					href="#">
+					here
+				</a>
+				.
 			</p>
 			<Form />
 			<Tutorial />
