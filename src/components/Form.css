@@ -7,7 +7,9 @@
 }
 .Form form input {
 	border: none;
-	height: 35px;
+	color: black;
+	font-size: 1rem;
+	height: 40px;
 }
 .Form form input::-webkit-input-placeholder {
 	color: black;
@@ -30,16 +32,18 @@
 	font-size: 1rem;
 }
 .Form form button {
+	background-color: #a6a6a6;
 	background-image: url(../images/search-icon.png);
 	background-position: center right;
 	background-repeat: no-repeat;
 	border: none;
 	color: black;
 	cursor: pointer;
-	font-size: 0.8rem;
-	height: 35px;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 40px;
 	text-align: left;
-	width: 75px;
+	width: 90px;
 }
 .Form table {
 	border: 2px solid black;
