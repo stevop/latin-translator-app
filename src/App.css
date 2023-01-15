@@ -7,19 +7,16 @@
 }
 body {
 	background: hsla(213, 23%, 45%, 1);
-
 	background: linear-gradient(
 		0deg,
 		hsla(213, 23%, 45%, 1) 0%,
 		hsla(60, 1%, 15%, 1) 61%
 	);
-
 	background: -webkit-linear-gradient(
 		0deg,
 		hsla(213, 23%, 45%, 1) 0%,
 		hsla(60, 1%, 15%, 1) 61%
 	);
-
 	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#586F8C", endColorstr="#262625", GradientType=1 );
 }
 .App {
