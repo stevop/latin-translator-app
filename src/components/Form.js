@@ -30,7 +30,9 @@ const Form = () => {
 			<form onSubmit={submitHandler}>
 				<fieldset>
 					<legend>
-						<label htmlFor="text">Search for a word: {query}</label>
+						<label htmlFor="text">
+							Searching for a word: <b>{query}</b>
+						</label>
 					</legend>
 					<input
 						id="text"

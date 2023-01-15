@@ -5,11 +5,15 @@ import Tutorial from "./components/Tutorial";
 const App = () => {
 	return (
 		<div className="App">
-			<h1>Welcome to Translator App</h1>
-			<small>by Stephanus Constantinus</small>
+			<h1>Welcome to Latin Translator App</h1>
+			<small>by Stephanus Constantinus, created in January 2023</small>
 			<p>
-				Checkout the <a href="#tutorial">tutorial section</a> to see how the app
-				works.
+				1. Checkout the <a href="#tutorial">tutorial section</a> to see how the
+				app works.
+			</p>
+			<p>
+				2. If you happen to not find the suitable translation, kindly check my
+				second translator app <a href="#">here</a>.
 			</p>
 			<Form />
 			<Tutorial />

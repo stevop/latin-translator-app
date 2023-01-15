@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.App {
+	border: dotted 1px black;
+
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 375px;
+}
+.App h1 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	max-width: 375px;
+	text-align: center;
+}
+.App small {
+	display: block;
+	margin-bottom: 1rem;
+	max-width: 375px;
+	text-align: center;
+}
+.App p {
+	margin-bottom: 0.5rem;
+	max-width: 375px;
+}
+
+@media only screen and (min-width: 375px) {
+}

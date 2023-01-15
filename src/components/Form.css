@@ -1,15 +1,20 @@
+.Form {
+	box-sizing: border-box;
+}
 .Form form {
-	margin-bottom: 20px;
-	width: 300px;
+	margin-bottom: 2rem;
+	max-width: 375px;
 }
 .Form table {
 	border: 1px solid black;
 	margin-bottom: 10px;
-	min-width: 300px;
-	max-width: 500px;
+}
+.Form fieldset {
+	padding: 0.625rem;
 }
 .Form-word {
 	font-style: italic;
+	max-width: 100%;
 }
 .Form table th {
 	text-align: left;
