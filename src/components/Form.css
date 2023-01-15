@@ -77,3 +77,13 @@ th {
 		min-width: 100%;
 	}
 }
+@media only screen and (min-width: 1640px) {
+	.Form .table-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media only screen and (min-width: 1920px) {
+	.Form .table-wrapper {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

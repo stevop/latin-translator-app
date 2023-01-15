@@ -12,7 +12,7 @@ const Tutorial = () => {
 				result of searching, for I am not the creator of API on which the search
 				results are dependend on. In this moment, the application is only
 				accessible through the web, but I plan to create a native versions for
-				Android and iOS if there will be a demand. Thanks again have enjoy.
+				Android and iOS if there will be a demand. Thanks again and enjoy.
 			</p>
 		</div>
 	);
