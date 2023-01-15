@@ -10,23 +10,23 @@
 	height: 35px;
 }
 .Form form input::-webkit-input-placeholder {
-	color: #262625;
+	color: black;
 	font-size: 1rem;
 }
 .Form form input::-moz-placeholder {
-	color: #262625;
+	color: black;
 	font-size: 1rem;
 }
 .Form form input:-ms-input-placeholder {
-	color: #262625;
+	color: black;
 	font-size: 1rem;
 }
 .Form form input::-ms-input-placeholder {
-	color: #262625;
+	color: black;
 	font-size: 1rem;
 }
 .Form form input::placeholder {
-	color: #262625;
+	color: black;
 	font-size: 1rem;
 }
 .Form form button {
@@ -34,7 +34,8 @@
 	background-position: center right;
 	background-repeat: no-repeat;
 	border: none;
-	color: #262625;
+	color: black;
+	cursor: pointer;
 	font-size: 0.8rem;
 	height: 35px;
 	text-align: left;
