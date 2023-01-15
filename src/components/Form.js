@@ -13,7 +13,11 @@ const Form = () => {
 		// creating a fetch function
 		const fetchData = async () => {
 			const response = await fetch(
-				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`
+				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`,
+				{
+					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+				}
 			);
 			const data = await response.json();
 			setWord(data);
