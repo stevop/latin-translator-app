@@ -5,7 +5,7 @@ const Tutorial = () => {
 		<div
 			id="tutorial"
 			className="Tutorial">
-			<h2>How does the Translator App works?</h2>
+			<h2>How does the Translator App work?</h2>
 			<p>
 				Hello and thank you for using my web application. It is <b>free</b> to
 				use and I take <b>no responsibility</b> for what is being displayed as a

@@ -10,6 +10,9 @@
 	margin-bottom: 1rem;
 	max-width: 375px;
 }
+.Form table:nth-of-type(odd) {
+	background-color: rgb(211, 211, 211);
+}
 .Form fieldset {
 	padding: 0.625rem;
 }
@@ -29,6 +32,37 @@ td,
 th {
 	padding: 5px;
 }
-table:nth-of-type(odd) {
-	background-color: rgb(211, 211, 211);
+
+@media only screen and (min-width: 375px) {
+	.Form form fieldset input {
+		padding: 0.5rem;
+	}
+	.Form form fieldset input::-webkit-input-placeholder {
+		font-style: italic;
+	}
+	.Form form fieldset input::-moz-placeholder {
+		font-style: italic;
+	}
+	.Form form fieldset input:-ms-input-placeholder {
+		font-style: italic;
+	}
+	.Form form fieldset input::-ms-input-placeholder {
+		font-style: italic;
+	}
+	.Form form fieldset input::placeholder {
+		font-style: italic;
+	}
+	.Form form fieldset button {
+		padding: 0.5rem;
+	}
+	.Form table {
+		min-width: 375px;
+		max-width: -webkit-fit-content;
+		max-width: -moz-fit-content;
+		max-width: fit-content;
+	}
+	.Form th,
+	.Form td {
+		padding: 0.5rem;
+	}
 }

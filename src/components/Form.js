@@ -54,12 +54,8 @@ const Form = () => {
 							</thead>
 							<tbody>
 								<tr>
-									<td
-										className="Form-word"
-										scope="col">
-										{oneWord.full_name}
-									</td>
-									<td scope="col"> {oneWord.translations_unstructured.en}</td>
+									<td className="Form-word">{oneWord.full_name}</td>
+									<td> {oneWord.translations_unstructured.en}</td>
 								</tr>
 							</tbody>
 						</table>

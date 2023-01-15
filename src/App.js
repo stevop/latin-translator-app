@@ -14,7 +14,7 @@ const App = () => {
 				by{" "}
 				<a
 					target="_blank"
-					rel="noreferer"
+					rel="noreferrer"
 					href="https://stefanp.netlify.app/">
 					Stephanus Constantinus
 				</a>
