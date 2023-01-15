@@ -1,47 +1,64 @@
 import "./Form.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Form = () => {
-	const [word, setWord] = useState("");
-	const [data, setData] = useState("");
-	// if data exists, set switch to true and display data
-	const [switcher, setSwitcher] = useState(false);
-
-	const fetchFirstData = async (term) => {
-		return await fetch(
-			`https://www.latin-is-simple.com/api/vocabulary/search/?query=${term}&forms_only=false`
-		)
-			.then((response) => response.json())
-			.then((data) => setData(data))
-			.catch((err) => console.error(err));
-	};
+	const [word, setWord] = useState(null);
+	const [query, setQuery] = useState("");
 
 	const submitHandler = (e) => {
 		e.preventDefault();
-	};
+		if (!query) return;
 
-	useEffect(() => {
-		data ? setSwitcher(true) : setSwitcher(false);
-		fetchFirstData(word);
-		console.log(data);
-	}, [word]);
+		const fetchData = async () => {
+			const response = await fetch(
+				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`
+			);
+			const data = await response.json();
+			setWord(data);
+			// console.log(data);
+		};
+		fetchData();
+	};
 
 	return (
 		<div className="Form">
 			<form onSubmit={submitHandler}>
 				<fieldset>
 					<legend>
-						<label htmlFor="text">Search for a word: {word}</label>
+						<label htmlFor="text">Search for a word: {query}</label>
 					</legend>
 					<input
 						id="text"
 						type="text"
-						onChange={(e) => setWord(e.target.value)}
+						placeholder="ex. 'portus'"
+						onChange={(e) => setQuery(e.target.value)}
 					/>
 					<button type="submit">Search</button>
 				</fieldset>
 			</form>
-			{switcher && <div className="Form-data"></div>}
+			{word &&
+				word.map((oneWord) => {
+					return (
+						<table key={oneWord.id}>
+							<thead>
+								<tr>
+									<th scope="col">Word</th>
+									<th scope="col">Translation</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td
+										className="Form-word"
+										scope="col">
+										{oneWord.full_name}
+									</td>
+									<td scope="col"> {oneWord.translations_unstructured.en}</td>
+								</tr>
+							</tbody>
+						</table>
+					);
+				})}
 		</div>
 	);
 };
