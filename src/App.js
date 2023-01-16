@@ -15,7 +15,7 @@ const App = () => {
 				<a
 					target="_blank"
 					rel="noreferrer"
-					href="https://stefanp.netlify.app/">
+					href="#">
 					Stephanus Constantinus
 				</a>
 				, created in January 2023

@@ -12,11 +12,17 @@ const Form = () => {
 
 		// creating a fetch function
 		const fetchData = async () => {
+			console.log("Fetching data...");
 			const response = await fetch(
 				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`,
 				{
-					"Access-Control-Allow-Origin": "*",
-					"Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+					method: "GET",
+					headers: {
+						"Content-Type": "application/json",
+						"Access-Control-Allow-Origin": "*",
+						"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+						"Access-Control-Allow-Headers": "*",
+					},
 				}
 			);
 			const data = await response.json();

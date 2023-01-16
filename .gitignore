@@ -24,3 +24,5 @@ yarn-error.log*
 
 # mine
 todo.txt
+# Local Netlify folder
+.netlify
