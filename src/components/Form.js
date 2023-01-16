@@ -14,16 +14,7 @@ const Form = () => {
 		const fetchData = async () => {
 			console.log("Fetching data...");
 			const response = await fetch(
-				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`,
-				{
-					method: "GET",
-					headers: {
-						"Content-Type": "application/json",
-						"Access-Control-Allow-Origin": "*",
-						"Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-						"Access-Control-Allow-Headers": "*",
-					},
-				}
+				`https://www.latin-is-simple.com/api/vocabulary/search/?query=${query}&forms_only=false`
 			);
 			const data = await response.json();
 			setWord(data);
